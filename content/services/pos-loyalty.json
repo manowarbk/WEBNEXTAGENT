@@ -1,0 +1,27 @@
+{
+    "icon":  "CreditCard",
+    "titleVi":  "Tư vấn \u0026 Triển khai Hệ thống POS \u0026 Khách Hàng Thân Thiết (Loyalty)",
+    "titleEn":  "Omnichannel POS \u0026 Loyalty System Implementation",
+    "descVi":  "Xây dựng trải nghiệm mua sắm liền mạch dựa trên các chuẩn mực quốc tế về quản lý bán lẻ. Next Agent giúp doanh nghiệp triển khai giải pháp điểm bán lẻ (POS) thế hệ mới, tối ưu hóa giao dịch đa kênh, thiết kế động cơ Loyalty thông minh để tự động hóa tích điểm, phân hạng thẻ thành viên và đồng bộ hóa tức thời với hệ thống ERP.",
+    "descEn":  "Deliver seamless shopping experiences based on global retail management standards. Next Agent implements next-generation Point of Sale (POS) solutions, optimizing omnichannel transactions, designing intelligent Loyalty engines, and automating points accrual, membership tiers, and instant ERP synchronization.",
+    "color":  "#EF4444",
+    "image":  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Triển khai hệ thống POS đa nền tảng và vận hành ngoại tuyến (offline)",
+                         "en":  "Deploy multi-platform POS with offline operations capability"
+                     },
+                     {
+                         "vi":  "Động cơ Loyalty thông minh cấu hình tích điểm và phân hạng thẻ linh hoạt",
+                         "en":  "Intelligent Loyalty engine with flexible points rules and membership tiers"
+                     },
+                     {
+                         "vi":  "Khuyến mãi động và cá nhân hóa trải nghiệm khách hàng tại quầy",
+                         "en":  "Dynamic promotions and personalized customer experiences at checkouts"
+                     },
+                     {
+                         "vi":  "Tích hợp đồng bộ thời gian thực với ERP và quản lý kho tổng",
+                         "en":  "Real-time synchronization with ERP and central inventory systems"
+                     }
+                 ]
+}

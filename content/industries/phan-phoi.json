@@ -1,0 +1,26 @@
+{
+    "icon":  "Network",
+    "titleVi":  "Phân phối",
+    "titleEn":  "Distribution",
+    "descVi":  "Hệ thống quản lý phân phối hiện đại — DMS, TMS, route optimization — kiểm soát toàn bộ chuỗi cung ứng.",
+    "descEn":  "Modern distribution management — DMS, TMS, route optimization — controlling the entire supply chain.",
+    "painPointsVi":  [
+                         "Quản lý đại lý và nhà phân phối rời rạc",
+                         "Thiếu visibility trên toàn chuỗi vận chuyển",
+                         "Đặt hàng và thanh toán thủ công",
+                         "Khó kiểm soát promotions và trade spend"
+                     ],
+    "painPointsEn":  [
+                         "Fragmented agent and distributor management",
+                         "Lack of visibility across the delivery chain",
+                         "Manual order and payment processes",
+                         "Difficult to control promotions and trade spend"
+                     ],
+    "solutions":  [
+                      "supply-chain-tms",
+                      "erp-implementation",
+                      "mendix-low-code"
+                  ],
+    "color":  "#F59E0B",
+    "image":  "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format\u0026fit=crop\u0026w=800\u0026q=80"
+}

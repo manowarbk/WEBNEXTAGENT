@@ -1,0 +1,27 @@
+{
+    "icon":  "Lightbulb",
+    "titleVi":  "Tư vấn Chiến lược Chuyển đổi số",
+    "titleEn":  "Digital Transformation Strategy Consulting",
+    "descVi":  "Ứng dụng các phương pháp luận chuyển đổi số chuẩn mực toàn cầu, Next Agent đồng hành cùng doanh nghiệp khảo sát hiện trạng, phân tích mức độ sẵn sàng, kiến trúc giải pháp tối ưu và xây dựng lộ trình số hóa thiết thực, giúp giải phóng sức mạnh công nghệ tối đa.",
+    "descEn":  "Applying global digital transformation methodologies, Next Agent partners with businesses to assess digital readiness, architect optimized solutions, and construct practical roadmap strategies.",
+    "color":  "#0887C9",
+    "image":  "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Khảo sát và đánh giá chỉ số sẵn sàng số hóa (Digital Readiness)",
+                         "en":  "Comprehensive digital readiness and maturity index assessment"
+                     },
+                     {
+                         "vi":  "Thiết kế Kiến trúc Doanh nghiệp tổng thể (Enterprise Architecture)",
+                         "en":  "High-level Enterprise Architecture and systems blueprint design"
+                     },
+                     {
+                         "vi":  "Chuẩn hóa và tối ưu quy trình nghiệp vụ (Business Process Re-engineering)",
+                         "en":  "Business Process Re-engineering (BPR) and workflows optimization"
+                     },
+                     {
+                         "vi":  "Hoạch định ngân sách dài hạn và phân kỳ đầu tư thông minh",
+                         "en":  "Long-term budgeting and intelligent phased investment planning"
+                     }
+                 ]
+}

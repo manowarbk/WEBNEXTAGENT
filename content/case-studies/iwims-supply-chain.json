@@ -1,0 +1,43 @@
+{
+  "client": "IWIMS",
+  "industry": "phan-phoi",
+  "solution": "supply-chain-solutions",
+  "titleVi": "Hệ thống quản lý kho và vận chuyển thông minh",
+  "titleEn": "Smart warehouse and transportation management",
+  "tagVi": "Phân phối · TMS / WMS",
+  "tagEn": "Distribution · TMS / WMS",
+  "descVi": "Giải pháp WMS & TMS tùy biến linh hoạt giúp kiểm soát toàn bộ chuỗi cung ứng và tự động hóa điều phối giao nhận.",
+  "descEn": "Flexible WMS & TMS solution enabling full supply chain control and automated transport dispatching.",
+  "challengeVi": "IWIMS cần hệ thống tích hợp để quản lý toàn bộ quy trình từ tiếp nhận hàng, lưu kho, xuất hàng đến theo dõi vận chuyển, thay thế spreadsheet và quy trình thủ công.",
+  "challengeEn": "IWIMS needed an integrated system to manage the entire process from goods receipt, warehousing, dispatch to shipping tracking, replacing spreadsheets and manual processes.",
+  "solutionVi": "Xây dựng hệ thống ERP+ TMS, với module quản lý lộ trình vận chuyển, tối ưu hoá tuyến đường và tracking real-time.",
+  "solutionEn": "Built an integrated ERP+ TMS, with shipping route management, route optimization, and real-time tracking.",
+  "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+  "featured": true,
+  "results": [
+    {
+      "metricVi": "Giảm chi phí vận chuyển",
+      "metricEn": "Transportation cost reduction",
+      "value": "28%",
+      "icon": "TrendingDown"
+    },
+    {
+      "metricVi": "Tốc độ xử lý đơn tăng",
+      "metricEn": "Order processing speed increase",
+      "value": "4×",
+      "icon": "Zap"
+    },
+    {
+      "metricVi": "Thời gian triển khai",
+      "metricEn": "Deployment time",
+      "value": "8 tuần",
+      "icon": "Clock"
+    },
+    {
+      "metricVi": "ROI năm đầu",
+      "metricEn": "First year ROI",
+      "value": "280%",
+      "icon": "DollarSign"
+    }
+  ]
+}
