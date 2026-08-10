@@ -31,7 +31,7 @@ export default config({
             vi: fields.text({ label: 'Tính năng (VI)' }),
             en: fields.text({ label: 'Tính năng (EN)' }),
           }),
-          { label: 'Các tính năng nổi bật', itemLabel: props => props.fields.vi.value }
+          { label: 'Các tính năng nổi bật', itemLabel: props => props.fields.vi.value || '' }
         ),
       },
     }),
@@ -53,7 +53,7 @@ export default config({
             vi: fields.text({ label: 'Tính năng (VI)' }),
             en: fields.text({ label: 'Tính năng (EN)' }),
           }),
-          { label: 'Tính năng cốt lõi', itemLabel: props => props.fields.vi.value }
+          { label: 'Tính năng cốt lõi', itemLabel: props => props.fields.vi.value || '' }
         ),
       },
     }),
@@ -70,13 +70,13 @@ export default config({
         color: fields.text({ label: 'Màu chủ đạo (Hex)' }),
         icon: fields.text({ label: 'Icon' }),
         image: fields.text({ label: 'Ảnh nền (URL hoặc đường dẫn)' }),
-        painPointsVi: fields.array(fields.text({ label: 'Nỗi đau (VI)' }), { label: 'Các Nỗi đau/Vấn đề (VI)', itemLabel: props => props.value }),
-        painPointsEn: fields.array(fields.text({ label: 'Nỗi đau (EN)' }), { label: 'Các Nỗi đau/Vấn đề (EN)', itemLabel: props => props.value }),
-        benefitsVi: fields.array(fields.text({ label: 'Lợi ích (VI)' }), { label: 'Các Lợi ích (VI)', itemLabel: props => props.value }),
-        benefitsEn: fields.array(fields.text({ label: 'Lợi ích (EN)' }), { label: 'Các Lợi ích (EN)', itemLabel: props => props.value }),
+        painPointsVi: fields.array(fields.text({ label: 'Nỗi đau (VI)' }), { label: 'Các Nỗi đau/Vấn đề (VI)', itemLabel: props => props.value || '' }),
+        painPointsEn: fields.array(fields.text({ label: 'Nỗi đau (EN)' }), { label: 'Các Nỗi đau/Vấn đề (EN)', itemLabel: props => props.value || '' }),
+        benefitsVi: fields.array(fields.text({ label: 'Lợi ích (VI)' }), { label: 'Các Lợi ích (VI)', itemLabel: props => props.value || '' }),
+        benefitsEn: fields.array(fields.text({ label: 'Lợi ích (EN)' }), { label: 'Các Lợi ích (EN)', itemLabel: props => props.value || '' }),
         solutions: fields.array(
           fields.relationship({ collection: 'solutions', label: 'Giải pháp' }),
-          { label: 'Các giải pháp liên quan', itemLabel: props => props.value }
+          { label: 'Các giải pháp liên quan', itemLabel: props => props.value || '' }
         ),
       },
     }),
@@ -97,21 +97,21 @@ export default config({
         descEn: fields.text({ label: 'Mô tả ngắn (EN)', multiline: true }),
         challengeVi: fields.text({ label: 'Thách thức (VI)', multiline: true }),
         challengeEn: fields.text({ label: 'Thách thức (EN)', multiline: true }),
-        challengePointsVi: fields.array(fields.text({ label: 'Điểm thách thức (VI)' }), { label: 'Các thách thức (VI)', itemLabel: props => props.value }),
-        challengePointsEn: fields.array(fields.text({ label: 'Điểm thách thức (EN)' }), { label: 'Các thách thức (EN)', itemLabel: props => props.value }),
+        challengePointsVi: fields.array(fields.text({ label: 'Điểm thách thức (VI)' }), { label: 'Các thách thức (VI)', itemLabel: props => props.value || '' }),
+        challengePointsEn: fields.array(fields.text({ label: 'Điểm thách thức (EN)' }), { label: 'Các thách thức (EN)', itemLabel: props => props.value || '' }),
         solutionVi: fields.text({ label: 'Giải pháp áp dụng (VI)', multiline: true }),
         solutionEn: fields.text({ label: 'Giải pháp áp dụng (EN)', multiline: true }),
-        solutionPointsVi: fields.array(fields.text({ label: 'Điểm giải pháp (VI)' }), { label: 'Các giải pháp (VI)', itemLabel: props => props.value }),
-        solutionPointsEn: fields.array(fields.text({ label: 'Điểm giải pháp (EN)' }), { label: 'Các giải pháp (EN)', itemLabel: props => props.value }),
+        solutionPointsVi: fields.array(fields.text({ label: 'Điểm giải pháp (VI)' }), { label: 'Các giải pháp (VI)', itemLabel: props => props.value || '' }),
+        solutionPointsEn: fields.array(fields.text({ label: 'Điểm giải pháp (EN)' }), { label: 'Các giải pháp (EN)', itemLabel: props => props.value || '' }),
         expansionStoryVi: fields.object({
           title: fields.text({ label: 'Tiêu đề (VI)' }),
           desc: fields.text({ label: 'Mô tả (VI)', multiline: true }),
-          points: fields.array(fields.text({ label: 'Điểm (VI)' }), { label: 'Các điểm nổi bật', itemLabel: props => props.value })
+          points: fields.array(fields.text({ label: 'Điểm (VI)' }), { label: 'Các điểm nổi bật', itemLabel: props => props.value || '' })
         }),
         expansionStoryEn: fields.object({
           title: fields.text({ label: 'Tiêu đề (EN)' }),
           desc: fields.text({ label: 'Mô tả (EN)', multiline: true }),
-          points: fields.array(fields.text({ label: 'Điểm (EN)' }), { label: 'Các điểm nổi bật', itemLabel: props => props.value })
+          points: fields.array(fields.text({ label: 'Điểm (EN)' }), { label: 'Các điểm nổi bật', itemLabel: props => props.value || '' })
         }),
         image: fields.text({ label: 'Ảnh thumbnail' }),
         featured: fields.checkbox({ label: 'Nổi bật (Hiện trang chủ)', defaultValue: false }),
@@ -128,7 +128,7 @@ export default config({
             value: fields.text({ label: 'Giá trị (vd: 28%)' }),
             icon: fields.text({ label: 'Icon (lucide-react)' }),
           }),
-          { label: 'Kết quả đạt được', itemLabel: props => props.fields.metricVi.value }
+          { label: 'Kết quả đạt được', itemLabel: props => props.fields.metricVi.value || '' }
         ),
       },
     }),

@@ -1,4 +1,4 @@
-﻿import fs from 'fs';
+import fs from 'fs';
 import path from 'path';
 
 function syncCollection(dir: string, outputFile: string, variableName: string) {
@@ -11,7 +11,7 @@ function syncCollection(dir: string, outputFile: string, variableName: string) {
     return JSON.parse(content);
   });
   
-  const tsContent = // This file is auto-generated\nexport const : any[] = ;\n;
+  const tsContent = `// This file is auto-generated\nexport const ${variableName}: any[] = ${JSON.stringify(items, null, 2)};\n`;
   
   fs.writeFileSync(path.join(process.cwd(), 'data', outputFile), tsContent, 'utf8');
   console.log('Synced ' + dir + ' to ' + outputFile);
