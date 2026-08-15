@@ -1,31 +1,7 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect, createContext, useContext } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-
-export default function ClientLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const [lang, setLang] = useState<'vi' | 'en'>('vi');
-
-  return (
-    <>
-      <Navbar lang={lang} onLangChange={setLang} />
-      <main style={{ minHeight: '100vh', paddingTop: 'var(--navbar-height)' }}>
-        {/* Pass lang to children via React context or just let pages use their own or assume 'vi' for now since standard App router doesn't easily pass props to children like this. 
-            For MVP, we will render children, but we can provide the lang via context if needed. Let's create a simple context. */}
-        <LanguageContext.Provider value={{ lang, setLang }}>
-          {children}
-        </LanguageContext.Provider>
-      </main>
-      <Footer lang={lang} />
-    </>
-  );
-}
-
-import { createContext, useContext } from 'react';
 
 type LanguageContextType = {
   lang: 'vi' | 'en';
@@ -38,3 +14,54 @@ export const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const useLanguage = () => useContext(LanguageContext);
+
+type ThemeContextType = {
+  theme: 'light' | 'dark';
+  toggleTheme: () => void;
+};
+
+export const ThemeContext = createContext<ThemeContextType>({
+  theme: 'dark',
+  toggleTheme: () => {},
+});
+
+export const useTheme = () => useContext(ThemeContext);
+
+export default function ClientLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const [lang, setLang] = useState<'vi' | 'en'>('vi');
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+
+  // Initialize theme from localStorage or system preference
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+    localStorage.setItem('theme', nextTheme);
+    document.documentElement.setAttribute('data-theme', nextTheme);
+  };
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <LanguageContext.Provider value={{ lang, setLang }}>
+        <Navbar lang={lang} onLangChange={setLang} theme={theme} onThemeToggle={toggleTheme} />
+        <main style={{ minHeight: '100vh', paddingTop: 'var(--navbar-height)' }}>
+          {children}
+        </main>
+        <Footer lang={lang} />
+      </LanguageContext.Provider>
+    </ThemeContext.Provider>
+  );
+}
