@@ -2,7 +2,6 @@
 import { useState, useEffect, createContext, useContext } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import FloatingChatbot from './FloatingChatbot';
 
 type LanguageContextType = {
   lang: 'vi' | 'en';
@@ -62,7 +61,6 @@ export default function ClientLayout({
           {children}
         </main>
         <Footer lang={lang} />
-        <FloatingChatbot />
       </LanguageContext.Provider>
     </ThemeContext.Provider>
   );

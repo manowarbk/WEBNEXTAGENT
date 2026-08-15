@@ -1,0 +1,29 @@
+{
+    "icon":  "Layers",
+    "titleVi":  "Nền Tảng Low-Code Mendix",
+    "titleEn":  "Mendix Low-Code Platform",
+    "descVi":  "Next Agent mang đến giải pháp phát triển phần mềm đột phá thông qua Mendix - nền tảng Low-Code dẫn đầu toàn cầu. Chúng tôi loại bỏ các rào cản lập trình truyền thống để rút ngắn thời gian triển khai đến 10 lần, đồng thời đảm bảo kiến trúc Cloud-native bảo mật, khả năng tích hợp vô hạn và sự cộng tác tối đa giữa bộ phận Nghiệp vụ (Business) và Kỹ thuật (IT).",
+    "descEn":  "Next Agent delivers breakthrough software development solutions via Mendix - the global leading Low-Code platform. We eliminate traditional coding bottlenecks to compress time-to-market by 10x, while ensuring secure Cloud-native architecture, infinite integration capability, and seamless collaboration between Business and IT teams.",
+    "color":  "#0887C9",
+    "image":  "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Phát triển ứng dụng tốc độ vượt trội (RAD) kết hợp kéo thả trực quan",
+                         "en":  "Rapid Application Development (RAD) with visual drag-and-drop modelers"
+                     },
+                     {
+                         "vi":  "Mô hình cộng tác liên tục (BizDevOps) phá vỡ khoảng cách Nghiệp vụ - Kỹ thuật",
+                         "en":  "Continuous collaboration (BizDevOps) bridging the gap between Business and IT"
+                     },
+                     {
+                         "vi":  "Kiến trúc Cloud-native hiện đại, tự động mở rộng và có độ tin cậy cấp doanh nghiệp",
+                         "en":  "Modern Cloud-native architecture with auto-scaling and enterprise-grade reliability"
+                     },
+                     {
+                         "vi":  "Khả năng mở rộng không giới hạn với custom Java/Javascript và API mở",
+                         "en":  "Infinite extensibility with custom Java/Javascript and open API integration"
+                     }
+                 ],
+    "ctaVi":  "Trải nghiệm Low-Code ngay",
+    "ctaEn":  "Experience Low-Code Now"
+}
