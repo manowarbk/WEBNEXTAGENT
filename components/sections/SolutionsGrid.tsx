@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { ArrowRight, Layers, Bot, LayoutGrid, Truck, ShoppingCart, Code2 } from 'lucide-react';
+import { ArrowRight, Layers, Bot, LayoutGrid, Truck, ShoppingCart, Code2, Target, Cpu } from 'lucide-react';
 import { useLanguage } from '../layout/ClientLayout';
 import { solutions } from '@/data/solutions';
 import ScrollReveal from '../ui/ScrollReveal';
@@ -12,6 +12,8 @@ const iconMap: Record<string, React.ReactNode> = {
   Truck: <Truck size={24} />,
   ShoppingCart: <ShoppingCart size={24} />,
   Code2: <Code2 size={24} />,
+  Target: <Target size={24} />,
+  Cpu: <Cpu size={24} />,
 };
 
 export default function SolutionsGrid() {

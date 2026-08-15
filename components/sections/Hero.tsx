@@ -29,19 +29,23 @@ export default function Hero() {
   const c = content[lang];
 
   return (
-    <section className="hero-section noise-overlay">
+    <section className="hero-section">
       <div className="hero-bg-elements">
+        <div className="hero-grid-overlay"></div>
         <div className="hero-mesh"></div>
       </div>
       
       <div className="container relative" style={{ zIndex: 10 }}>
         <div className="hero-content">
           <ScrollReveal direction="up" delay={0}>
-            <div className="section-eyebrow">{c.eyebrow}</div>
+            <div className="badge badge-mendix" style={{ marginBottom: '1.5rem', textTransform: 'none' }}>
+              <span className="mendix-dot" style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-accent)', marginRight: '6px' }}></span>
+              {c.eyebrow}
+            </div>
           </ScrollReveal>
           
           <ScrollReveal direction="up" delay={0.1}>
-            <h1 className="hero-title">
+            <h1 className="hero-title gradient-text">
               {c.title} <br />
               <span className="gradient-text-mendix">{c.titleHighlight}</span>
             </h1>
@@ -61,14 +65,12 @@ export default function Hero() {
               </Link>
               <Link href="/giai-phap" className="btn btn-ghost btn-lg">
                 {c.secondaryCTA}
-                <Play size={18} />
+                <Play size={18} fill="currentColor" />
               </Link>
             </div>
           </ScrollReveal>
         </div>
       </div>
-
-      
     </section>
   );
 }

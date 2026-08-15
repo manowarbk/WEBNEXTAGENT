@@ -1,5 +1,6 @@
 import Hero from '@/components/sections/Hero';
 import SolutionsGrid from '@/components/sections/SolutionsGrid';
+import ProcessFlow from '@/components/sections/ProcessFlow';
 import IndustriesGrid from '@/components/sections/IndustriesGrid';
 import StatsBar from '@/components/sections/StatsBar';
 import CaseStudyPreview from '@/components/sections/CaseStudyPreview';
@@ -9,9 +10,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SolutionsGrid />
-      <IndustriesGrid />
       <StatsBar />
+      <SolutionsGrid />
+      <ProcessFlow />
+      <IndustriesGrid />
       <CaseStudyPreview />
       <CTABanner />
     </>

@@ -15,19 +15,19 @@ export default function StatsBar() {
   return (
     <section className="stats-section">
       <div className="container">
-        <div className="stats-grid">
-          {stats.map((stat, i) => (
-            <ScrollReveal key={i} direction="up" delay={0.1 * i}>
-              <div className="stat-item">
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{lang === 'vi' ? stat.labelVi : stat.labelEn}</div>
-              </div>
-            </ScrollReveal>
-          ))}
+        <div className="stats-container">
+          <div className="stats-grid">
+            {stats.map((stat, i) => (
+              <ScrollReveal key={i} direction="up" delay={0.1 * i}>
+                <div className="stat-item">
+                  <div className="stat-value">{stat.value}</div>
+                  <div className="stat-label">{lang === 'vi' ? stat.labelVi : stat.labelEn}</div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </div>
-
-      
     </section>
   );
 }

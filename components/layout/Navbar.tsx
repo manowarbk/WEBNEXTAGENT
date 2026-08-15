@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, ChevronDown, Globe } from 'lucide-react';
+import { Menu, X, ChevronDown, Globe, Sun, Moon } from 'lucide-react';
 
 interface NavChild {
   label: string;
@@ -92,9 +92,11 @@ const navItems: { vi: NavItem[]; en: NavItem[] } = {
 interface NavbarProps {
   lang?: 'vi' | 'en';
   onLangChange?: (lang: 'vi' | 'en') => void;
+  theme?: 'light' | 'dark';
+  onThemeToggle?: () => void;
 }
 
-export default function Navbar({ lang = 'vi', onLangChange }: NavbarProps) {
+export default function Navbar({ lang = 'vi', onLangChange, theme = 'dark', onThemeToggle }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -152,6 +154,14 @@ export default function Navbar({ lang = 'vi', onLangChange }: NavbarProps) {
               <Globe size={14} />
               <span>{lang === 'vi' ? 'EN' : 'VI'}</span>
             </button>
+            <button
+              className="lang-toggle"
+              onClick={onThemeToggle}
+              title="Toggle theme"
+            >
+              {theme === 'light' ? <Moon size={14} /> : <Sun size={14} />}
+              <span>{theme === 'light' ? 'Dark' : 'Light'}</span>
+            </button>
             <Link href="/book-demo" className="btn btn-primary btn-sm">
               {lang === 'vi' ? 'Book Demo' : 'Book Demo'}
             </Link>
@@ -185,6 +195,25 @@ export default function Navbar({ lang = 'vi', onLangChange }: NavbarProps) {
             <Link href="/book-demo" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center', marginTop: '1rem' }} onClick={() => setMobileOpen(false)}>
               {lang === 'vi' ? 'Book Demo Ngay' : 'Book a Demo'}
             </Link>
+            
+            <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', borderTop: '1px solid var(--border-default)', paddingTop: '1.5rem' }}>
+              <button
+                className="lang-toggle"
+                onClick={() => onLangChange?.(lang === 'vi' ? 'en' : 'vi')}
+                style={{ flex: 1, justifyContent: 'center' }}
+              >
+                <Globe size={14} />
+                <span>{lang === 'vi' ? 'English (EN)' : 'Tiếng Việt (VI)'}</span>
+              </button>
+              <button
+                className="lang-toggle"
+                onClick={onThemeToggle}
+                style={{ flex: 1, justifyContent: 'center' }}
+              >
+                {theme === 'light' ? <Moon size={14} /> : <Sun size={14} />}
+                <span>{theme === 'light' ? (lang === 'vi' ? 'Chế độ Tối' : 'Dark Mode') : (lang === 'vi' ? 'Chế độ Sáng' : 'Light Mode')}</span>
+              </button>
+            </div>
           </div>
         </div>
       )}
