@@ -1,0 +1,29 @@
+{
+    "icon":  "Cpu",
+    "titleVi":  "Bộ Công Cụ Quản Trị Thông Minh (Intelligence Tools)",
+    "titleEn":  "Smart Management Tools (Intelligence Tools)",
+    "descVi":  "Các công cụ AI Agent của Next Agent được thiết kế riêng để giải quyết các bài toán vận hành cụ thể cho doanh nghiệp bán lẻ, phân phối và sản xuất — từ công cụ Tự động chuyển đổi sao kê ngân hàng thành dữ liệu kế toán (Bank Statement AI) đến công cụ Kiểm kho thông minh AI (Smart Stocktake Agent), tích hợp trực tiếp với SAP, Microsoft Dynamics AX, MISA.",
+    "descEn":  "Next Agent\u0027s AI Agent tools are custom-built to solve specific operational bottlenecks in retail, distribution, and manufacturing — from Bank Statement AI reconciliation to Smart Stocktake AI Agents, directly integrating with SAP, Microsoft Dynamics AX, and MISA.",
+    "color":  "#7C3AED",
+    "image":  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Bank Statement AI: Tự động trích xuất sao kê (PDF, Excel, Ảnh Scan) thành dữ liệu kế toán chuẩn hoá, giảm 90% thời gian đối soát",
+                         "en":  "Bank Statement AI: Automate statement extraction (PDF, Excel, Scan) into structured accounting data, reducing reconciliation time by 90%"
+                     },
+                     {
+                         "vi":  "Tích hợp ERP tài chính: Kết nối trực tiếp với SAP, Microsoft Dynamics AX, MISA \u0026 tương thích 40+ ngân hàng tại Việt Nam",
+                         "en":  "Financial ERP Integration: Direct sync with SAP, Microsoft Dynamics AX, MISA \u0026 compatible with 40+ banks in Vietnam"
+                     },
+                     {
+                         "vi":  "Smart Stocktake Agent: Kiểm kho AI tự động đối chiếu số liệu thực tế với ERP/WMS thời gian thực, phát hiện chênh lệch rủi ro",
+                         "en":  "Smart Stocktake Agent: AI inventory auditing real-time matching actual physical stock with ERP/WMS, detecting discrepancies instantly"
+                     },
+                     {
+                         "vi":  "Tối ưu chi phí \u0026 nhân lực: Giảm 80% thời gian kiểm kho, duy trì sai lệch dưới 1%, áp dụng không giới hạn danh mục kho \u0026 SKU",
+                         "en":  "Cost \u0026 Labor Optimization: Reduce stocktake time by 80%, keep inventory error below 1%, unlimited warehouse \u0026 SKU scalability"
+                     }
+                 ],
+    "ctaVi":  "Đặt lịch demo sản phẩm",
+    "ctaEn":  "Schedule Product Demo"
+}

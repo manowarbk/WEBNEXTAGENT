@@ -1,0 +1,26 @@
+{
+    "icon":  "ShoppingBag",
+    "titleVi":  "E-commerce",
+    "titleEn":  "E-commerce",
+    "descVi":  "Nền tảng TMĐT mạnh mẽ — từ website, app đến tích hợp các sàn Việt Nam, quản lý vận chuyển và thanh toán.",
+    "descEn":  "Powerful e-commerce platforms — from websites, apps to Vietnamese marketplace integration, shipping and payment.",
+    "painPointsVi":  [
+                         "Vận hành đa sàn rời rạc, tốn nguồn lực",
+                         "Tỷ lệ hoàn trả cao, khó quản lý",
+                         "Thiếu personalization cho khách hàng",
+                         "Logistics và fulfillment chưa tối ưu"
+                     ],
+    "painPointsEn":  [
+                         "Fragmented multi-marketplace operations",
+                         "High return rates, difficult to manage",
+                         "Lack of customer personalization",
+                         "Non-optimized logistics and fulfillment"
+                     ],
+    "solutions":  [
+                      "omnichannel-ecommerce",
+                      "ai-agent-automation",
+                      "custom-software"
+                  ],
+    "color":  "#0055FF",
+    "image":  "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format\u0026fit=crop\u0026w=800\u0026q=80"
+}

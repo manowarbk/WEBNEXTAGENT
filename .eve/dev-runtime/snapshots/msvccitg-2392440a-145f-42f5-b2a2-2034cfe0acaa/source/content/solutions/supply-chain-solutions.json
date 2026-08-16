@@ -1,0 +1,29 @@
+{
+    "icon":  "Truck",
+    "titleVi":  "Giải pháp Chuỗi Cung Ứng (Supply Chain Planning \u0026 TMS)",
+    "titleEn":  "Supply Chain planning \u0026 TMS Solutions",
+    "descVi":  "Lấy cảm hứng từ các tiêu chuẩn quản trị chuỗi cung ứng hiện đại, giải pháp của Next Agent giúp doanh nghiệp làm chủ luồng hàng hóa và thông tin. Từ hệ thống lập kế hoạch nhu cầu thông minh (Demand Planning), tối ưu hóa phân bổ kênh bán (Allocation), tự động hóa tích hợp hóa đơn điện tử E-invoice, quản lý chứng từ số đến tối ưu hóa lộ trình giao hàng (TMS) và kiểm kê kho thời gian thực.",
+    "descEn":  "Inspired by global supply chain management standards, Next Agent\u0027s solutions empower businesses to master inventory and information flows. From intelligent demand planning, optimized multi-channel goods allocation, automated bi-directional E-invoice integration, digital document management, to Route Optimization (TMS) and real-time inventory control.",
+    "color":  "#F59E0B",
+    "image":  "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Transportation Management System (TMS) tối ưu lộ trình và quản lý nhà xe thông minh",
+                         "en":  "Transportation Management System (TMS) optimizing routes and carrier collaboration"
+                     },
+                     {
+                         "vi":  "Phân bổ tồn kho tự động (Allocation) dựa trên tốc độ bán và nhu cầu thị trường",
+                         "en":  "Automated inventory allocation based on real-time sales velocity and demand signals"
+                     },
+                     {
+                         "vi":  "Tích hợp E-invoice \u0026 Số hóa toàn bộ quy trình chứng từ điện tử hai chiều",
+                         "en":  "E-invoice integration \u0026 complete bi-directional digitization of electronic documents"
+                     },
+                     {
+                         "vi":  "Quản lý kho hàng thông minh tích hợp kiểm kê quét mã vạch và quy trình giao nhận",
+                         "en":  "Smart warehouse management with barcode inventory counting and delivery workflows"
+                     }
+                 ],
+    "ctaVi":  "Tối ưu hóa chuỗi cung ứng",
+    "ctaEn":  "Optimize Your Supply Chain"
+}

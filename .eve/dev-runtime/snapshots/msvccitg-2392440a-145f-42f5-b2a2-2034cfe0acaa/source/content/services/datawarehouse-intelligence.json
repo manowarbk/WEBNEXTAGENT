@@ -1,0 +1,27 @@
+{
+    "icon":  "Database",
+    "titleVi":  "Kho dữ liệu \u0026 Báo cáo thông minh",
+    "titleEn":  "Datawarehouse and Intelligence Report",
+    "descVi":  "Xây dựng Datawarehouse tập trung và các hệ thống báo cáo BI thông minh giúp ra quyết định kinh doanh chính xác.",
+    "descEn":  "Build centralized Datawarehouse and BI reporting systems to help make accurate business decisions.",
+    "color":  "#F59E0B",
+    "image":  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Thiết kế Datawarehouse",
+                         "en":  "Datawarehouse design"
+                     },
+                     {
+                         "vi":  "Xử lý \u0026 làm sạch dữ liệu (ETL)",
+                         "en":  "Data processing \u0026 ETL"
+                     },
+                     {
+                         "vi":  "Xây dựng Dashboard BI trực quan",
+                         "en":  "Visual BI Dashboards"
+                     },
+                     {
+                         "vi":  "Phân tích dữ liệu \u0026 Báo cáo động",
+                         "en":  "Data analytics \u0026 Dynamic reporting"
+                     }
+                 ]
+}

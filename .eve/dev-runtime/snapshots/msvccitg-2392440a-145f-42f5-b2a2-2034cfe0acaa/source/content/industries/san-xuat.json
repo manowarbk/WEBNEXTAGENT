@@ -1,0 +1,26 @@
+{
+    "icon":  "Factory",
+    "titleVi":  "Sản xuất",
+    "titleEn":  "Manufacturing",
+    "descVi":  "Chuyển đổi số nhà máy với MES, ERP tích hợp, IoT monitoring — tăng OEE, giảm downtime, cải thiện chất lượng.",
+    "descEn":  "Digitize manufacturing with MES, integrated ERP, IoT monitoring — increase OEE, reduce downtime, improve quality.",
+    "painPointsVi":  [
+                         "Lập kế hoạch sản xuất thủ công, chậm",
+                         "Thiếu truy xuất nguồn gốc và quality traceability",
+                         "Máy móc thiếu monitoring real-time",
+                         "Tích hợp ERP với sàn sản xuất còn yếu"
+                     ],
+    "painPointsEn":  [
+                         "Manual, slow production planning",
+                         "Lack of origin and quality traceability",
+                         "Insufficient real-time machine monitoring",
+                         "Weak ERP integration with production floor"
+                     ],
+    "solutions":  [
+                      "erp-implementation",
+                      "ai-agent-automation",
+                      "mendix-low-code"
+                  ],
+    "color":  "#00D4AA",
+    "image":  "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format\u0026fit=crop\u0026w=800\u0026q=80"
+}

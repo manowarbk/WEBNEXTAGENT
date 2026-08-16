@@ -1,0 +1,45 @@
+{
+  "agentId": "nextagent-website",
+  "agentRoot": "D:\\1.PROJECT\\2.ClaudeProject\\NEXTAGENT\\Project\\nextagent-website\\agent",
+  "appRoot": "D:\\1.PROJECT\\2.ClaudeProject\\NEXTAGENT\\Project\\nextagent-website",
+  "channels": [
+    {
+      "sourceKind": "module",
+      "logicalPath": "channels/eve.ts",
+      "sourceId": "channels/eve.ts"
+    }
+  ],
+  "connections": [],
+  "diagnosticsSummary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "extensions": [],
+  "resolvedExtensions": [],
+  "hooks": [],
+  "instructions": [
+    {
+      "definition": {
+        "content": "# Identity\n\nYou are a helpful assistant.\n",
+        "role": "system"
+      },
+      "sourceKind": "markdown",
+      "logicalPath": "instructions.md",
+      "sourceId": "instructions.md"
+    }
+  ],
+  "lib": [],
+  "kind": "eve-agent-discovery-manifest",
+  "sandbox": null,
+  "sandboxWorkspaces": [],
+  "schedules": [],
+  "skills": [],
+  "tools": [],
+  "version": 13,
+  "subagents": [],
+  "configModule": {
+    "sourceKind": "module",
+    "logicalPath": "agent.ts",
+    "sourceId": "agent.ts"
+  }
+}
