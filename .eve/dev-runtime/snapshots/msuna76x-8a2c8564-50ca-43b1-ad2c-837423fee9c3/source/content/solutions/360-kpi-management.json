@@ -1,0 +1,29 @@
+{
+    "icon":  "Target",
+    "titleVi":  "Hệ thống Quản lý Hiệu suất \u0026 Đánh giá Nhân viên 360",
+    "titleEn":  "360 Employee Performance \u0026 KPI Evaluation",
+    "descVi":  "Giải pháp quản trị nhân sự thế hệ mới giúp tối ưu hóa hiệu suất làm việc của đội ngũ. Tham chiếu các mô hình quản trị hiệu suất tiên tiến trên thế giới, hệ thống cung cấp công cụ theo dõi năng suất, thiết lập \u0026 phân rã mục tiêu (KPIs/OKRs), đánh giá 360 độ minh bạch và tự động hóa báo cáo hiệu quả công việc thời gian thực, liên kết trực tiếp với cơ chế tính thưởng và đãi ngộ.",
+    "descEn":  "Next-gen HR management solutions designed to unlock employee productivity. Referencing advanced global performance frameworks, the system provides real-time productivity tracking, KPI/OKR cascading, multi-perspective 360-degree reviews, and automated performance analytics linked directly to incentives.",
+    "color":  "#00D4AA",
+    "image":  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Thiết lập và phân rã chỉ tiêu KPIs/OKRs từ cấp công ty đến từng nhân sự",
+                         "en":  "Define and cascade KPIs/OKRs from corporate level down to individuals"
+                     },
+                     {
+                         "vi":  "Đánh giá 360 độ toàn diện (Quản lý, Đồng nghiệp, Tự đánh giá và Khách hàng)",
+                         "en":  "Comprehensive 360-degree reviews (Manager, Peer, Self, and Customer feedback)"
+                     },
+                     {
+                         "vi":  "Theo dõi năng suất và tiến độ công việc thời gian thực trực quan",
+                         "en":  "Visual real-time productivity tracking and task progress monitoring"
+                     },
+                     {
+                         "vi":  "Báo cáo phân tích hiệu suất tự động và liên kết chính sách đãi ngộ linh hoạt",
+                         "en":  "Automated performance analytics and flexible reward integration"
+                     }
+                 ],
+    "ctaVi":  "Nâng cao năng suất ngay",
+    "ctaEn":  "Boost Productivity Now"
+}

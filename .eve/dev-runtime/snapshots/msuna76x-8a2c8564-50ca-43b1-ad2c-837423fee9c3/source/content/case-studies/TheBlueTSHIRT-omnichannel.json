@@ -1,0 +1,53 @@
+{
+  "client": "TheBlueTSHIRT",
+  "industry": "ban-le",
+  "solution": "pos-loyalty",
+  "titleVi": "Đồng bộ vận hành khối bán lẻ và tính thưởng trên doanh số bán hàng",
+  "titleEn": "Retail operations synchronization & sales commission reward system",
+  "tagVi": "Bán lẻ · Omnichannel & Sales Incentive",
+  "tagEn": "Retail · Omnichannel & Sales Incentive",
+  "descVi": "Xây dựng hệ thống tính thưởng Incentive tự động theo doanh số bán hàng và tối ưu hóa vận hành khối bán lẻ cho TheBlueTSHIRT.",
+  "descEn": "Building automated Incentive reward calculation based on sales revenue and optimizing retail block operations for TheBlueTSHIRT.",
+  "challengeVi": "TheBlueTSHIRT cần đồng bộ hóa toàn bộ kênh bán lẻ và quản lý chính sách tính thưởng bán hàng minh bạch, thời gian thực cho đội ngũ nhân sự.",
+  "challengeEn": "TheBlueTSHIRT needed to synchronize all retail channels and establish a transparent, real-time sales incentive calculation for retail staff.",
+  "challengePointsVi": [],
+  "challengePointsEn": [],
+  "solutionVi": "Triển khai nền tảng vận hành bán lẻ thống nhất tích hợp POS, WMS và CRM. Xây dựng động cơ tính thưởng doanh số bán hàng tự động, chính xác.",
+  "solutionEn": "Deployed a unified retail operations platform integrating POS, WMS, and CRM. Built automated and accurate sales commission incentive engines.",
+  "solutionPointsVi": [],
+  "solutionPointsEn": [],
+  "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+  "featured": true,
+  "testimonial": {
+    "quoteVi": "NEXT AGENT đã giúp chúng tôi chuyển đổi hoàn toàn cách vận hành — từ thủ công, rời rạc sang tự động hoá, liền mạch. Hệ thống tính thưởng doanh số mới giúp thúc đẩy mạnh mẽ động lực kinh doanh của nhân viên.",
+    "quoteEn": "NEXT AGENT completely transformed our operations — from manual and fragmented to automated and seamless. The new sales incentive engine strongly boosted employee sales motivation.",
+    "author": "Ban Quản Lý",
+    "position": "TheBlueTSHIRT"
+  },
+  "results": [
+    {
+      "metricVi": "Giảm thời gian xử lý đơn",
+      "metricEn": "Order processing time reduced",
+      "value": "65%",
+      "icon": "Clock"
+    },
+    {
+      "metricVi": "Độ chính xác tồn kho",
+      "metricEn": "Inventory accuracy",
+      "value": "99.2%",
+      "icon": "CheckCircle"
+    },
+    {
+      "metricVi": "Tăng trưởng doanh số bán lẻ",
+      "metricEn": "Retail revenue growth",
+      "value": "3.2×",
+      "icon": "TrendingUp"
+    },
+    {
+      "metricVi": "Điểm bán tích hợp",
+      "metricEn": "Points of sale integrated",
+      "value": "Multi-channel",
+      "icon": "Store"
+    }
+  ]
+}

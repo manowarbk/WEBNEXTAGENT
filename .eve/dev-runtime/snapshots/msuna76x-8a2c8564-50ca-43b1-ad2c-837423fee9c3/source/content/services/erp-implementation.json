@@ -1,0 +1,27 @@
+{
+    "icon":  "LayoutGrid",
+    "titleVi":  "Tư vấn \u0026 Triển khai ERP",
+    "titleEn":  "ERP Implementation and Consulting",
+    "descVi":  "Tư vấn nghiệp vụ và triển khai các hệ thống phần mềm doanh nghiệp (ERP) đảm bảo tiến độ, chất lượng và phù hợp.",
+    "descEn":  "Business consulting and implementation of enterprise resource planning (ERP) systems ensuring quality and business fit.",
+    "color":  "#00D4AA",
+    "image":  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800\u0026q=80",
+    "features":  [
+                     {
+                         "vi":  "Triển khai ERP chuyên sâu",
+                         "en":  "In-depth ERP implementation"
+                     },
+                     {
+                         "vi":  "Phân tích quy trình và gap analysis",
+                         "en":  "Process analysis \u0026 gap analysis"
+                     },
+                     {
+                         "vi":  "Kiểm thử tự động \u0026 QA/QC",
+                         "en":  "Automated testing \u0026 QA/QC"
+                     },
+                     {
+                         "vi":  "Đào tạo \u0026 Chuyển giao công nghệ",
+                         "en":  "Training \u0026 Technology transfer"
+                     }
+                 ]
+}

@@ -1,0 +1,149 @@
+{
+  "agentRoot": "D:\\1.PROJECT\\2.ClaudeProject\\NEXTAGENT\\Project\\nextagent-website\\.eve\\dev-runtime\\snapshots\\msuna76x-8a2c8564-50ca-43b1-ad2c-837423fee9c3\\source\\agent",
+  "appRoot": "D:\\1.PROJECT\\2.ClaudeProject\\NEXTAGENT\\Project\\nextagent-website\\.eve\\dev-runtime\\snapshots\\msuna76x-8a2c8564-50ca-43b1-ad2c-837423fee9c3\\source",
+  "channels": [
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "GET",
+      "urlPath": "/eve/v1/info",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "POST",
+      "urlPath": "/eve/v1/session",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "POST",
+      "urlPath": "/eve/v1/session/:sessionId",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "POST",
+      "urlPath": "/eve/v1/session/:sessionId/cancel",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "POST",
+      "urlPath": "/eve/v1/session/:sessionId/compact",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "POST",
+      "urlPath": "/eve/v1/session/:sessionId/clear",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "POST",
+      "urlPath": "/eve/v1/session/:sessionId/reset",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "GET",
+      "urlPath": "/eve/v1/session/:sessionId/stream",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    },
+    {
+      "kind": "channel",
+      "name": "eve",
+      "logicalPath": "channels/eve.ts",
+      "method": "GET",
+      "urlPath": "/eve/v1/session/:parentSessionId/subagents/:callId/:childSessionId/stream",
+      "sourceId": "channels/eve.ts",
+      "sourceKind": "module",
+      "adapterKind": "http"
+    }
+  ],
+  "connections": [],
+  "diagnosticsSummary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "disabledFrameworkTools": [],
+  "dynamicInstructions": [],
+  "dynamicSkills": [],
+  "dynamicTools": [],
+  "extensionMounts": [],
+  "hooks": [],
+  "instructions": [
+    {
+      "name": "instructions",
+      "logicalPath": "instructions.md",
+      "content": "# Identity\n\nYou are a helpful assistant.\n",
+      "role": "system",
+      "sourceId": "instructions.md",
+      "sourceKind": "markdown"
+    }
+  ],
+  "remoteAgents": [],
+  "sandbox": null,
+  "sandboxWorkspaces": [],
+  "schedules": [],
+  "skills": [],
+  "tools": [],
+  "workspaceResourceRoot": {
+    "logicalPath": "workspace-resources/__root__",
+    "rootEntries": []
+  },
+  "config": {
+    "compaction": {},
+    "name": "nextagent-website",
+    "source": {
+      "sourceKind": "module",
+      "logicalPath": "agent.ts",
+      "sourceId": "agent.ts"
+    },
+    "model": {
+      "id": "zai/glm-5.2",
+      "routing": {
+        "kind": "gateway",
+        "target": "zai"
+      },
+      "contextWindowTokens": 1000000,
+      "maxOutputTokens": 128000
+    }
+  },
+  "kind": "eve-agent-compiled-manifest",
+  "subagentEdges": [],
+  "subagents": [],
+  "version": 41
+}

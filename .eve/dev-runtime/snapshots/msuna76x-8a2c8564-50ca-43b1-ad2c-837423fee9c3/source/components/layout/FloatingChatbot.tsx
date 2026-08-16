@@ -1,45 +1,77 @@
 'use client';
-import { useState, useRef, useEffect } from 'react';
-import { useEveAgent } from 'eve/react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, X, Send, Bot, User, Loader2, Sparkles } from 'lucide-react';
 import { useLanguage } from './ClientLayout';
+
+type Message = {
+  role: 'user' | 'assistant';
+  content: string;
+};
 
 export default function FloatingChatbot() {
   const { lang } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [isBusy, setIsBusy] = useState(false);
   
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  // Initialize the real Eve Agent hook
-  const agent = useEveAgent({
-    onEvent: (event) => console.debug('Eve event:', event.type),
-    onError: (error) => console.error('Eve error:', error.message),
-    onFinish: (snapshot) => console.log('Eve session finished:', snapshot.status),
-  });
-
-  const isBusy = agent.status === 'submitted' || agent.status === 'streaming';
 
   // Scroll to bottom when messages change or chat is opened
   useEffect(() => {
     if (isOpen) {
       messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [agent.messages, isOpen]);
+  }, [messages, isOpen]);
+
+  const sendMessage = useCallback(async (text: string) => {
+    if (!text.trim() || isBusy) return;
+    
+    const userMsg: Message = { role: 'user', content: text };
+    setMessages(prev => [...prev, userMsg]);
+    setIsBusy(true);
+
+    try {
+      const res = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [...messages, userMsg] }),
+      });
+
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status}`);
+      }
+
+      const data = await res.json();
+      const assistantMsg: Message = { 
+        role: 'assistant', 
+        content: data.content || data.message || 'Xin lỗi, tôi không thể trả lời lúc này.' 
+      };
+      setMessages(prev => [...prev, assistantMsg]);
+    } catch (error) {
+      console.error('Chat error:', error);
+      setMessages(prev => [...prev, { 
+        role: 'assistant', 
+        content: lang === 'vi' 
+          ? 'Xin lỗi, đã xảy ra lỗi. Vui lòng thử lại sau.' 
+          : 'Sorry, an error occurred. Please try again later.'
+      }]);
+    } finally {
+      setIsBusy(false);
+    }
+  }, [messages, isBusy, lang]);
 
   const handleSubmit = async (e?: React.FormEvent) => {
     e?.preventDefault();
     if (!input.trim() || isBusy) return;
-    
     const message = input;
     setInput('');
-    await agent.send(message);
+    await sendMessage(message);
   };
 
   const handleSuggestionClick = async (suggestion: string) => {
-    if (isBusy) return;
-    await agent.send(suggestion);
+    await sendMessage(suggestion);
   };
 
   const suggestions = lang === 'vi' 
@@ -61,7 +93,7 @@ export default function FloatingChatbot() {
     welcome: lang === 'vi' 
       ? 'Xin chào! Tôi có thể giúp gì cho bạn về các dịch vụ Mendix Low-Code, AI Agent và Chuyển đổi số của NextAgent?' 
       : 'Hello! How can I help you with Mendix Low-Code, AI Agents, and Digital Transformation services at NextAgent?',
-    thinking: lang === 'vi' ? 'Đang trả lời...' : 'Responding...'
+    thinking: lang === 'vi' ? 'Đang suy nghĩ...' : 'Thinking...'
   };
 
   return (
@@ -115,7 +147,7 @@ export default function FloatingChatbot() {
                   </h3>
                   <p style={{ fontSize: '10px', color: '#bfdbfe', margin: 0, display: 'flex', alignItems: 'center', gap: '4px' }}>
                     <Sparkles size={12} color="#fde68a" />
-                    Powered by GLM 5.2 (Eve Agent)
+                    Powered by GLM 5.2
                   </p>
                 </div>
               </div>
@@ -175,8 +207,8 @@ export default function FloatingChatbot() {
                 </div>
               </div>
 
-              {/* Message history from real Eve Agent */}
-              {agent.messages.map((message, i) => {
+              {/* Message history */}
+              {messages.map((message, i) => {
                 const isUser = message.role === 'user';
                 return (
                   <div key={i} style={{ 
@@ -262,7 +294,7 @@ export default function FloatingChatbot() {
             </div>
 
             {/* Suggestions */}
-            {agent.messages.length === 0 && !isBusy && (
+            {messages.length === 0 && !isBusy && (
               <div style={{ padding: '0 16px 8px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
                 {suggestions.map((suggestion, idx) => (
                   <button

@@ -1,0 +1,97 @@
+{
+  "client": "Công Ty TNHH Bonali",
+  "industry": "ban-le",
+  "solution": "tu-van-chuyen-doi-so",
+  "titleVi": "Công Ty TNHH Bonali: Chuyển đổi số toàn diện & Hiện đại hoá hạ tầng CNTT",
+  "titleEn": "Bonali Co., Ltd: Comprehensive Digital Transformation & IT Infrastructure Modernization",
+  "tagVi": "Bán lẻ · Managed IT Services & AI",
+  "tagEn": "Retail · Managed IT Services & AI",
+  "descVi": "Cách Next Agent trở thành đối tác IT vận hành đáng tin cậy cho Công Ty TNHH Bonali, giúp doanh nghiệp ổn định hệ thống đa kênh và mở rộng hợp tác sang tư vấn chuyển đổi số toàn diện, ứng dụng AI.",
+  "descEn": "How Next Agent became a trusted Managed IT Services partner for Bonali Co., Ltd, stabilizing multichannel operations and expanding into digital transformation consulting & AI integration.",
+  "challengeVi": "Công Ty TNHH Bonali trước khi hợp tác vận hành hệ thống CNTT phân tán trên nhiều nền tảng, thiếu một đầu mối kỹ thuật thống nhất, dẫn đến nhiều sự cố gián đoạn và rủi ro vận hành.",
+  "challengeEn": "Prior to partnership, Bonali Co., Ltd operated fragmented IT systems across multiple platforms without unified technical management, leading to operational disruptions.",
+  "challengePointsVi": [
+    "Hạ tầng CNTT (email, domain, hosting, website) thiếu giám sát tập trung, dễ gián đoạn khi hết hạn hoặc gặp sự cố an ninh.",
+    "Dữ liệu và quyền truy cập trên Google Workspace chưa được quản trị chặt chẽ, tiềm ẩn rủi ro khi nhân sự biến động.",
+    "Vận hành nghiệp vụ Kế toán, Kho hàng, CRM trên MISA còn nhiều thao tác thủ công, thiếu hỗ trợ kỹ thuật kịp thời.",
+    "Hệ thống Ecommerce SAPO chưa đồng bộ mượt với kho hàng và các kênh bán, ảnh hưởng tốc độ xử lý đơn hàng.",
+    "Quản lý tài khoản quảng cáo Facebook, TikTok, Google Ads phân tán, thiếu đầu mối kỹ thuật xử lý sự cố."
+  ],
+  "challengePointsEn": [
+    "IT infrastructure (email, domain, hosting, website) lacked centralized monitoring, prone to expiration and security incidents.",
+    "Google Workspace user data and permissions were loosely managed, posing risks during staff turnover.",
+    "MISA accounting, warehouse, and CRM operations involved heavy manual tasks without timely technical support.",
+    "SAPO E-commerce platform lacked smooth sync with central inventory and channels, slowing order processing.",
+    "Ad accounts on Facebook, TikTok, and Google Ads were fragmented without unified tech support for issues."
+  ],
+  "solutionVi": "Next Agent triển khai mô hình Hỗ trợ hệ thống CNTT toàn diện (Managed IT Services), đóng vai trò như đội ngũ IT chuyên trách nội bộ cho Bonali chuẩn hóa theo hợp đồng phụ lục minh bạch.",
+  "solutionEn": "Next Agent deployed a comprehensive Managed IT Services framework, acting as a dedicated internal IT team for Bonali Co., Ltd with standardized transparent SLAs.",
+  "solutionPointsVi": [
+    "Email Server & Hạ tầng: Quản lý, giám sát Domain, Hosting, Website; đảm bảo an ninh và gia hạn đúng hạn.",
+    "Google Workspace: Quản trị người dùng, phân quyền an toàn, tự động sao lưu dữ liệu định kỳ.",
+    "Thiết bị IT: Hỗ trợ chuẩn hóa cấu hình thiết bị cho nhân sự mới và xử lý sự cố kỹ thuật.",
+    "Hệ thống MISA: Hỗ trợ nghiệp vụ Kế toán, Kho hàng, CRM; xử lý sự cố và tối ưu quy trình.",
+    "Ecommerce SAPO: Đồng bộ tự động đơn hàng, tồn kho và báo cáo doanh thu đa kênh.",
+    "Quảng cáo đa kênh: Giám sát kỹ thuật và hỗ trợ xử lý sự cố tài khoản Facebook, TikTok, Google Ads."
+  ],
+  "solutionPointsEn": [
+    "Email Server & Infrastructure: Monitoring Domain, Hosting, Website; securing uptime and timely renewals.",
+    "Google Workspace: User administration, security permission controls, and automated routine data backups.",
+    "IT Devices: Standardizing workstation setups for new employees and resolving hardware/software issues.",
+    "MISA Systems: Supporting Accounting, Inventory, CRM workflows; troubleshooting and optimizing procedures.",
+    "SAPO E-commerce: Automated synchronization of orders, stock levels, and multi-channel revenue analytics.",
+    "Multi-channel Advertising: Technical monitoring and incident support for Facebook, TikTok, Google Ads accounts."
+  ],
+  "expansionStoryVi": {
+    "title": "Từ Hỗ Trợ Vận Hành Đến Đối Tác Chuyển Đổi Số Toàn Diện",
+    "desc": "Từ nền tảng tin cậy xây dựng qua hợp đồng hỗ trợ hệ thống, Công Ty TNHH Bonali đã tiếp tục ký kết hợp đồng tư vấn IT mở rộng với Next Agent:",
+    "points": [
+      "Tư vấn chiến lược CNTT tổng thể dài hạn cho doanh nghiệp",
+      "Bảo trì và tối ưu toàn bộ hệ thống công nghệ thông tin & ứng dụng hiện có",
+      "Tư vấn và triển khai ứng dụng AI vào quy trình vận hành, tự động hoá tác vụ và hỗ trợ ra quyết định"
+    ]
+  },
+  "expansionStoryEn": {
+    "title": "From Operations Support to Full Digital Transformation Partner",
+    "desc": "Building upon trusted operations support, Bonali Co., Ltd expanded partnership with Next Agent through long-term technology consulting:",
+    "points": [
+      "Comprehensive long-term corporate IT strategy consulting",
+      "Systematic maintenance & optimization of existing IT architecture & applications",
+      "Consulting & deploying AI applications into daily workflows, task automation & decision support"
+    ]
+  },
+  "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80",
+  "featured": true,
+  "testimonial": {
+    "quoteVi": "Next Agent Tech không chỉ giải quyết triệt để các sự cố gián đoạn CNTT hàng ngày mà còn là người đồng hành đáng tin cậy giúp Bonali hoạch định chiến lược chuyển đổi số và đưa AI vào vận hành thực tế.",
+    "quoteEn": "Next Agent Tech not only completely resolved our daily IT bottlenecks but also became a trusted partner guiding Bonali's digital transformation and practical AI integration.",
+    "author": "Ban Giám Đốc",
+    "position": "Công Ty TNHH Bonali"
+  },
+  "results": [
+    {
+      "metricVi": "Giảm thời gian xử lý sự cố",
+      "metricEn": "Incident resolution time reduced",
+      "value": "60%",
+      "icon": "Clock"
+    },
+    {
+      "metricVi": "Uptime hệ thống CNTT",
+      "metricEn": "System uptime SLA",
+      "value": "99.9%",
+      "icon": "CheckCircle"
+    },
+    {
+      "metricVi": "Tốc độ đồng bộ SAPO & Kho",
+      "metricEn": "SAPO & Inventory sync speed",
+      "value": "3×",
+      "icon": "Zap"
+    },
+    {
+      "metricVi": "Hợp tác tư vấn mở rộng",
+      "metricEn": "Expanded AI & Consulting scope",
+      "value": "AI + IT",
+      "icon": "TrendingUp"
+    }
+  ]
+}

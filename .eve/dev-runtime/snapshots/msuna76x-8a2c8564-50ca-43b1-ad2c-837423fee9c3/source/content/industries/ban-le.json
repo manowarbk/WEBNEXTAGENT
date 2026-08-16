@@ -1,0 +1,26 @@
+{
+    "icon":  "Store",
+    "titleVi":  "Bán lẻ",
+    "titleEn":  "Retail",
+    "descVi":  "Giải pháp số hoá toàn diện cho chuỗi bán lẻ — từ quản lý cửa hàng, POS, tồn kho đến loyalty program và omnichannel.",
+    "descEn":  "Comprehensive digitization for retail chains — store management, POS, inventory, loyalty programs and omnichannel.",
+    "painPointsVi":  [
+                         "Quản lý tồn kho thủ công, hay sai lệch",
+                         "Chưa kết nối đồng bộ online-offline",
+                         "Thiếu dữ liệu khách hàng và hành vi mua",
+                         "Quy trình vận hành chuỗi chưa chuẩn hoá"
+                     ],
+    "painPointsEn":  [
+                         "Manual inventory management with frequent discrepancies",
+                         "Online-offline channels not synchronized",
+                         "Lack of customer data and purchase behavior insights",
+                         "Non-standardized chain operations"
+                     ],
+    "solutions":  [
+                      "omnichannel-ecommerce",
+                      "supply-chain-tms",
+                      "mendix-low-code"
+                  ],
+    "color":  "#EF4444",
+    "image":  "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format\u0026fit=crop\u0026w=800\u0026q=80"
+}
